@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>space</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
     <header>
-        <h1>
-            SPACE
-        </h1>
-        <nav class="menu
-        ">
-            <ul>
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>Exploração</li>
-                </a>
-                <a href="#">
-                    <li>Planetas</li>
-                </a>
-                <a href="#">
-                    <li>Sobre</li>
-                </a>
-            </ul>
+        <nav class="menu">
+            <h1 class="logo">
+                Space
+            </h1>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Planetário</a></li>
+                    <li class="nav-item"><a href="#">Produtos</a></li>
+                    <li class="nav-item"><a href="#">Sobre</a></li>
+                </ul>
+                <button class="nav-button">
+                    <a href="#">Entrar</a>
+                </button>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow ()"><img src="menu_white_36dp.svg" alt="" class="icon"></button>
+                </div>
         </nav>
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Planetário</a></li>
+                <li class="nav-item"><a href="#">Produtos</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+            </ul>
+
+            <button class="nav-button">
+                <a href="#">Entrar</a>
+            </button>
+        </div>
+
     </header>
+    <script src="script.js"></script>
+    
 <body>
     
 </body>
