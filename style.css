@@ -137,10 +137,6 @@ header {
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .mobile-menu {
-        display: none;
-
-    }
 }
 
 main{
