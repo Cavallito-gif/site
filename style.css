@@ -10,17 +10,24 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+body {
+    background-image: linear-gradient(to bottom,rgb(34, 0, 73),rgb(16, 0, 73));
+    background-image: url(https://images.unsplash.com/photo-1498116069452-debf99cb30f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: none;
+}
+
 header {
-    background-image:linear-gradient(to top, black, rgb(34, 0, 73)) ;
+    background-image:linear-gradient(to bottom, black, rgb(34, 0, 73)) ;
     color: white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.452);
 }
 
 .menu {
     display: flex;
-
+    
     justify-content: space-between;
-    padding: 1.5em 6em;
+    padding: 1.5em 8em;
 }
 
 .logo {
@@ -73,7 +80,7 @@ header {
     display: none;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 740px) {
     .menu {
         padding: 1.5em 4em;
     }
@@ -120,19 +127,51 @@ header {
     }
 }
 
+@media (max-width:1110px){
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 main{
     max-width: 100%;
-    min-width: 470px;
+    min-width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Embed code';
     color: rgb(255, 255, 255);
     text-align: center;
-    background-image: url(https://starwalk.space/gallery/images/what-is-space/1140x641.jpg);
-    background-size: cover;
-    background-repeat: none;
+
 }
 
 h1, p {
     max-width:800px ;
     min-width: 470px;
-    margin: auto;
+
     padding-bottom: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article > h1, p {
+    background-color: #373680;
+    border-radius: 15px;
+    flex-direction: row;
+}
+
+article #principal{
+    padding: 25px 5px 25px 5px ;
+    margin: 10px;
+}
+article #secundario {
+    padding: 25px 5px 25px 5px ;
+    margin: 10px;
+
 }
