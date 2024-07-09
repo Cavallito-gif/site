@@ -11,14 +11,11 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom,rgb(34, 0, 73),rgb(16, 0, 73));
-    background-image: url(https://images.unsplash.com/photo-1498116069452-debf99cb30f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-repeat: none;
+    background-color: white;
 }
 
 header {
-    background-image:linear-gradient(to bottom, black, rgb(34, 0, 73)) ;
+    background-color: black;
     color: white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.452);
 }
@@ -54,7 +51,7 @@ header {
 }
 
 .nav-item > a:hover {
-    background-color: #570080e7;
+    background-color: orangered;
     padding: 10px;
     transition-duration: .5s;
     border-radius: 10px;
@@ -62,7 +59,7 @@ header {
 
 .nav-button {
     border: none;
-    background-color: #373680;
+    background-color: orangered;
     padding: 15px 10px;
     border-radius: 10px;
 }
@@ -110,7 +107,7 @@ header {
     }
     .mobile-menu li:hover {
         transition-duration: .5s;
-        background-color: rgba(87, 0, 128, 0.906);
+        background-color: orangered;
         padding: 10px;
         border-radius: 10px;
         }
@@ -139,42 +136,46 @@ header {
     }
 }
 
-main{
-    max-width: 100%;
-    min-width: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Embed code';
-    color: rgb(255, 255, 255);
-    text-align: center;
-
+main {
+    position: relative;
 }
-
-h1, p {
-    max-width:800px ;
-    min-width: 370px;
-
-    padding-bottom: 20px;
-}
-
 article {
+    background-color: transparent;
+    height: auto;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;    
 }
 
-article > h1, p {
-    background-color: #373680;
-    border-radius: 15px;
-    flex-direction: row;
+.img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    min-width: 25%;
+    height: ;
 }
 
-article #principal{
-    padding: 25px 5px 25px 5px ;
-    margin: 10px;
+h1#foto{
+    color: white;
+    margin-left:30px;
+    margin-top: 150px;
+    font-size: 1.8em;
+    padding-bottom: 10px;
 }
-article #secundario {
-    padding: 25px 5px 25px 5px ;
-    margin: 10px;
+
+p#principal {
+    color: white;
+    margin-left:30px;
+}
+
+#botao-img {
+    margin:20px 0px 0px 30px;
+    padding: 15px;
+    color: white;
+    background-color:orangered;
+    border: none;
+    border-radius: 5px;
 
 }
+
